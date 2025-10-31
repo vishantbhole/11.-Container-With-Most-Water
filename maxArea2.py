@@ -9,3 +9,6 @@ class Solution:
             maxWater = max(maxWater, min(height[start], height[end]) * (end - start))
             if height[start] > height[end]:
                 end-=1
+            else:
+                start+=1
+        return maxWater
