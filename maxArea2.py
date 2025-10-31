@@ -5,3 +5,7 @@ class Solution:
         
         start = 0
         end = len(height) - 1
+        while(start < end):
+            maxWater = max(maxWater, min(height[start], height[end]) * (end - start))
+            if height[start] > height[end]:
+                end-=1
