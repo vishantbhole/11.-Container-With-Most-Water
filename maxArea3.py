@@ -12,3 +12,4 @@ class Solution:
             else:
                 maxWater = max(maxWater,height[r] * (r - l))
                 r -= 1
+        return maxWater
