@@ -5,3 +5,5 @@ class Solution:
         l = 0
         r = len(height) - 1
         maxWater = 0
+        while l < r:
+            if(height[l] < height[r]):
